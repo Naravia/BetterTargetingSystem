@@ -122,10 +122,6 @@ public sealed unsafe class Plugin : IDalamudPlugin
         if (Client.IsLoggedIn == false || Client.LocalPlayer == null)
             return;
 
-        // Disable features in PvP
-        if (Client.IsPvP)
-            return;
-
         // Disable in GPose
         if (Client.IsGPosing)
             return;
